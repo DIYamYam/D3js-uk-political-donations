@@ -97,7 +97,7 @@ function start() {
 		// Alternative title based 'tooltips'
 		// node.append("title")
 		//	.text(function(d) { return d.donor; });
-		//.on("click", onclick)
+		//.on("onclick", onclick) added by me
 
  
 	
@@ -343,10 +343,10 @@ function mouseout() {
 			.style("display", "none");
 		}
 
-function onclick(a){
+/*function onclick(a){
     window.open("http://www.google.com/search?q="+d.donor);
- }
-
+ } 
+added by me */ 
 $(document).ready(function() {
 		d3.selectAll(".switch").on("click", function(d) {
       var id = d3.select(this).attr("id");
