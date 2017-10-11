@@ -75,7 +75,7 @@ function transition(name) {
 		$("#view-source-type").fadeIn(1000);
 		return fundsType();
 	}
-function onclick(){
+function onclick(a){
     window.location.assign("http://www.google.com/search?q="+d.donor, '_blank');
  }
 
@@ -99,7 +99,7 @@ function start() {
 		// Alternative title based 'tooltips'
 		// node.append("title")
 		//	.text(function(d) { return d.donor; });
-		.on("mousedown",function(d){window.open(d.url, '_blank')});
+		.on("mousedown", onclick);
 
  
 	
