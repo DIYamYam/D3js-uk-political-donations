@@ -99,10 +99,9 @@ function start() {
 		// Alternative title based 'tooltips'
 		// node.append("title")
 		//	.text(function(d) { return d.donor; });
-		.on("click",function(d){window.open(d.url, '_blank')});
+		.on("mousedown",function(d){window.open(d.url, '_blank')});
 
-      d3.select(window).on("click", function() { zoom(root); });
-});
+ 
 	
 		force.gravity(0)
 			.friction(0.75)
