@@ -75,9 +75,7 @@ function transition(name) {
 		$("#view-source-type").fadeIn(1000);
 		return fundsType();
 	}
-function onclick(a){
-    window.location.assign("http://www.google.com/search?q="+d.donor, '_blank');
- }
+
 
 function start() {
 
@@ -344,6 +342,10 @@ function mouseout() {
 		d3.select(".tooltip")
 			.style("display", "none");
 		}
+
+function onclick(a){
+    window.location.assign("http://www.google.com/search?q="+d.donor, '_blank');
+ }
 
 $(document).ready(function() {
 		d3.selectAll(".switch").on("click", function(d) {
