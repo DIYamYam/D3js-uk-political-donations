@@ -97,7 +97,7 @@ function start() {
 		// Alternative title based 'tooltips'
 		// node.append("title")
 		//	.text(function(d) { return d.donor; });
-		.on("onclick", onclick);
+		//.on("onclick", onclick);
 
  
 	
