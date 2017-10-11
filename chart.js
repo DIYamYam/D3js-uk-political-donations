@@ -345,7 +345,7 @@ function mouseout() {
 		}
 
 
-added by me */ 
+
 $(document).ready(function() {
 		d3.selectAll(".switch").on("click", function(d) {
       var id = d3.select(this).attr("id");
