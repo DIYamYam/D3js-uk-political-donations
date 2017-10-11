@@ -97,7 +97,7 @@ function start() {
 		// Alternative title based 'tooltips'
 		// node.append("title")
 		//	.text(function(d) { return d.donor; });
-		//.on("onclick", onclick);
+		.onmousedown("onclick", onclick)
 
  
 	
@@ -344,7 +344,7 @@ function mouseout() {
 		}
 
 function onclick(a){
-    window.location.assign("http://www.google.com/search?q="+d.donor, '_blank');
+    window.open("http://www.google.com/search?q="+d.donor);
  }
 
 $(document).ready(function() {
