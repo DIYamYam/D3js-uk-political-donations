@@ -93,11 +93,12 @@ function start() {
 		.attr("r", 0)
 		.style("fill", function(d) { return fill(d.party); })
 		.on("mouseover", mouseover)
-		.on("mouseout", mouseout);
+		.on("mouseout", mouseout)
+		.on("click", fuction(d) { window.open("http://www.google.com/search?q=" + d.donnor;);});
 		// Alternative title based 'tooltips'
 		// node.append("title")
 		//	.text(function(d) { return d.donor; });
-		//.on("onclick", onclick) added by me
+		//
 
  
 	
@@ -343,9 +344,7 @@ function mouseout() {
 			.style("display", "none");
 		}
 
-/*function onclick(a){
-    window.open("http://www.google.com/search?q="+d.donor);
- } 
+
 added by me */ 
 $(document).ready(function() {
 		d3.selectAll(".switch").on("click", function(d) {
